@@ -1,0 +1,352 @@
+.background-color {
+    background: #2D6073;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background:url(https://play.nintendo.com/images/PSMD_desktop_wallpaper-b_1920x1200.5fbbf19b.6865d68e.jpg);
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-color{
+    background: #171133;
+    width: 50%;
+    height: 75%;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* .details{
+    color: aliceblue;
+    font-family: poppins;
+    column-count: 2;
+    column-gap: 35px;
+    border-radius: 10px;
+    padding: 10px;
+} */
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 0.2rem;
+}
+
+.Imagem-pokemon img{
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+button{
+    background: darkblue;
+    padding: 10px;
+    border: transparent;
+    box-shadow: none;
+    border-radius: 10px;
+    color: aliceblue;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.texto p, .texto h1{
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+/*  */
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .pokedex {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 500px;
+    }
+  
+  .left {
+    width: 335px;
+    position: relative;
+    background-color: red;
+    border-top-left-radius: 12%;
+    border-bottom-left-radius: 10%;
+    box-shadow: 10px -10px DarkRed inset;
+  }
+  
+  .left-top {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  
+  .left-top1 {
+    width: 200px;
+    height: 95px;
+    position: absolute;
+    left: 9px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 80px;
+    background-color: FireBrick;
+    box-shadow: 0 -10px DarkRed inset;
+    z-index: 1;
+  }
+  
+  .left-top2 {
+    width: 135px;
+    height: 50px;
+    float: right;
+    position: relative;
+    background-color: FireBrick;
+    z-index: 2;
+    box-shadow: 0 -10px DarkRed inset;
+  }
+  
+  .big-lens {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    border-radius: 50%;
+    top: 12px;
+    left: 20px;
+    background: radial-gradient(circle, white, #59F2FF, #48E1FF);
+    border: 6px white solid;
+    box-shadow: 0 0 5px 4px DarkRed;
+  }
+  
+  .small-lens {
+    display: flex;
+    width: 75px;
+    position: relative;
+    justify-content: space-between;
+    top: -55px;
+    left: 100px;
+  }
+  
+  .small-lens1 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #FF8080, red);
+    border: 2px DarkRed solid;
+  }
+  
+  .small-lens2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #FFFF99, yellow);
+    border: 2px DarkRed solid;
+  }
+  
+  .small-lens3 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: radial-gradient(circle,#99FF99,lime);
+    border: 2px DarkRed solid;
+  }
+  
+  .right {
+    width: 450px; 
+    position: relative;
+    background-color: red;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 60px;
+    box-shadow: -10px -10px FireBrick inset;
+  }
+  
+  .right-top1 {
+    width: 160px;
+    display: none;
+    height: 150px;
+    float: left;
+    position: relative;
+    background-color: white;
+    box-shadow: 0 -10px FireBrick inset;
+    z-index: 2;
+  }
+  
+  .right-top2 {
+      display: none;
+    width: 200px;
+    height: 105px;
+    position: relative;
+    margin-left: 150px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 80px;
+    background-color: white;
+    box-shadow: 0 -10px FireBrick inset;
+    z-index: 1;
+  }
+  
+  .right-top1-incut {
+    width: 160px;
+    height: 10px;
+    margin-top: -45px;
+    position: relative;
+    background-color: DarkRed;
+    z-index: 1;
+  }
+  
+  .right-top2-incut {
+    width: 191px;
+    height: 105px;
+    margin: -61px 9px auto auto;
+    position: relative;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 80px;
+    background-color: white;
+    box-shadow: 0 -10px DarkRed inset;
+    z-index: 0;
+  }
+  
+  .right-incut {
+    width: 342px;
+    height: 476px;
+    margin: -100px 10px auto auto;
+    position: relative;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 60px;
+    box-shadow: -10px -10px DarkRed inset;
+  }
+  
+  .middle {
+    width: 50px;
+    position: relative;
+    border: 1px solid FireBrick;
+    background: linear-gradient(to right,FireBrick,red,FireBrick);
+  }
+  
+  .hinge1 {
+    height: 70px;
+    position: relative;
+    background: linear-gradient(to right,DarkRed,FireBrick,red,FireBrick,DarkRed);
+  }
+  
+  .hinge2 {
+    height: 40px;
+    top: 20px;
+    position: relative;
+    background: linear-gradient(to right,DarkRed,FireBrick,red,FireBrick,DarkRed);
+  }
+  
+  .hinge3 {
+    height: 70px;
+    top: 315px;
+    position: relative;
+    background: linear-gradient(to right,DarkRed,FireBrick,red,FireBrick,DarkRed);
+  }
+  
+  .screen {
+    display: flex;
+    height: 320px;
+    background: #BFBFBF;
+    border-radius: 20px;
+    margin: 110px 30px auto 30px;
+    box-shadow: 5px -5px 0 3px grey inset;
+  }
+  
+  .screen-display {
+    width: 230px;
+    height: 240px;
+    position: relative;
+    background:white;
+    border-radius: 20px;
+    border: 3px black solid;
+    top: 20px;
+    left: 20px;
+  }
+  
+  .screen-lens1 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(circle, #FF8080, red);
+    border: 2px DarkRed solid;
+    margin: 5px 0 0 120px;  
+  }
+  
+  .right-screen {
+    position: relative;
+    width: 80%;
+    padding: 10px;
+    height: 350px;
+    border-radius: 10px;
+    top: -380px;
+    left: 25px;
+    background: radial-gradient(circle, #1A1A1A, #171133);
+  }
+  
+  
+  .right-bottom-screens {
+    display: flex;
+    width: 240px;
+    height: 60px;
+    position: relative;
+    top: -325px;
+    left: 50px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .right-bottom-screen button{
+    width: 120px;
+    height: 50px;
+    background: darkblue;
+    border-radius: 5px;
+    margin-left: 25px;
+    border: 1px solid black;
+    text-align: center;
+    color: aliceblue;
+    font-size: 15px;
+    padding: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+
+  .right-bottom-screen:hover{
+      filter: brightness(0.9);
+
+  }
+  
+  .pokedex-opener {
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 40px solid yellow;
+    position: absolute;
+    top: 220px;
+    left: 15px;
+  }
+  
+
+  @media (max-width:991px) {
+    .pokedex {
+      flex-wrap: wrap;
+    }
+  }
