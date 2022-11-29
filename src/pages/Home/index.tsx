@@ -9,8 +9,7 @@ import "./styles.css";
 // var pokemons:pokemonCharacter;
 
 export default function Home() {
-
-    
+  
     // var varPokemons:any; 
     const [index, setIndex] = useState<any>(1);
     const [bpokemons, setbPokemons] = useState<any>([]);
@@ -30,14 +29,14 @@ export default function Home() {
       if(bpokemons.length > 0 && index === undefined){
         setIndex(0);
       }
-      
+      // eslint-disable-next-line
   }, [bpokemons])
 
     useEffect( () => {
       if(index !== undefined ) {
         CarregarPokemon(index);
       }
-      
+      // eslint-disable-next-line
   }, [index])
 
     async function reqPokemon() {
@@ -45,11 +44,10 @@ export default function Home() {
         setbPokemons(res.results);
     }
 
+    // eslint-disable-next-line
     async function CarregarPokemon(i:any) {
-      const res = await enderecoApi.get(bpokemons[i].url);
-        
+      const res = await enderecoApi.get(bpokemons[i].url);     
         setPokemons(res.data);
-
      }
 
 
